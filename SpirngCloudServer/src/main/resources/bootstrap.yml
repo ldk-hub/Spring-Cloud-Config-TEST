@@ -1,0 +1,14 @@
+#부트스트랩.yml이 어플리케이션.yml보다 먼저 스캔됨.
+server:
+ port: 8094
+ 
+spring: 
+ application:
+  name: ldkService
+ cloud:
+   config:
+    uri: http://localhost:8093
+    
+    
+    
+    
