@@ -1,17 +1,40 @@
 package com.ldk.application;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.config.server.EnableConfigServer;
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.context.annotation.Bean;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
 
 
-//@EnableConfigServerì€ Git Repositoryì˜ ì„¤ì •í•œ ymlì˜ ì •ë³´ë¥¼ ì½ì–´ì˜¨ë‹¤.
 @SpringBootApplication
-@EnableConfigServer
+@EnableEurekaClient
+@RestController
 public class SpirngCloudServerApplication {
+	 
 
+	
 	public static void main(String[] args) {
 		SpringApplication.run(SpirngCloudServerApplication.class, args);
 	}
 
+	 	@Bean
+	    @LoadBalanced //¸®º»À¸·Î Æ®·¡ÇÈ ¶ó¿îµå·ÎºóÀ¸·Î ºĞ¹è 1¹øÅ¬¶ó 2¹øÅ¬¶ó Å×½ºÆ®ÇØ¾ßµÊ.
+	    //1Àº h2db connect 2´Â postgresql·Î ¼³Á¤
+	    public RestTemplate restTemplate() {
+	        return new RestTemplate();
+	    }
+
+	 	@Autowired
+	     RestTemplate restTemplate;
+	 	
+	 	
+	@RequestMapping(value="/")
+	public String hoem() {
+		return "Eureka Client Application Test1";
+	}
 }
