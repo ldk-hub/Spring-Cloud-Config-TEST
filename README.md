@@ -20,7 +20,8 @@ MSA는 만능이 아님 서비스 환경적으로  서비스 사용자가 많았
  - 1. 유레카 (집중관리 서비스)  
  
   - 유레카 관제 모니터링 페이지
-![screencapture-localhost-8761-2020-11-17-14_16_19](https://user-images.githubusercontent.com/12209348/99349518-90609980-28df-11eb-9a18-5052d085f3b7.png)
+![Inkedscreencapture-localhost-8761-2020-11-17-14_16_19_LI_Moment](https://user-images.githubusercontent.com/12209348/99351507-0ebf3a80-28e4-11eb-9392-56d7463a9290.jpg)
+
 
  - 유레카 서버에 클라이언트 연결 구성
 ![screencapture-localhost-8761-2019-09-20-09_44_19](https://user-images.githubusercontent.com/12209348/65290702-41a85a00-db8b-11e9-9288-96ff23bc9421.png)  
