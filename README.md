@@ -19,13 +19,13 @@ MSA는 만능이 아님 서비스 환경적으로  서비스 사용자가 많았
 ### 마이크로 서비스  
  - 1. 유레카 (집중관리 서비스)  
  
-  - 유레카 서버 구성 테스트  
- ![screencapture-localhost-8761-2019-09-19-12_41_07](https://user-images.githubusercontent.com/12209348/65213458-339dff00-dae1-11e9-95e1-425d6662b4a2.png)  
+  - 유레카 관제 모니터링 페이지
+![screencapture-localhost-8761-2020-11-17-14_16_19](https://user-images.githubusercontent.com/12209348/99349518-90609980-28df-11eb-9a18-5052d085f3b7.png)
 
- - 유레카 서버에 클라이언트 연결  
+ - 유레카 서버에 클라이언트 연결 구성
 ![screencapture-localhost-8761-2019-09-20-09_44_19](https://user-images.githubusercontent.com/12209348/65290702-41a85a00-db8b-11e9-9288-96ff23bc9421.png)  
 
- - 유레카 클라이언트 테스트   
+ - 유레카 클라이언트 구동 테스트완료
  ![screencapture-localhost-8080-2019-09-20-09_44_04](https://user-images.githubusercontent.com/12209348/65290701-41a85a00-db8b-11e9-8f08-87958cee740e.png)  
 
 ### 개발 진행  
@@ -33,15 +33,13 @@ MSA는 만능이 아님 서비스 환경적으로  서비스 사용자가 많았
  - h2 DB 구성완료  
  - 프로젝트 DB 연동완료(postgresql, h2)  
  - 클라이언트(h2), 서버(postgresql)로 구성완료  
- 
- 
+  
 ### 진행예정
 1. 유레카 구성 2개 서버
   - 서버아이피 및 스테이터스 
   -레지스트리, 인스턴스, 클라이언트, 서버  디테일하게 정리
-  
 2. 리본구성
   - 트래픽 분리(기본 라운드로빈, 트래픽분배 다른패턴 파악)
-3. 히스트릭스 구성
+3. 서킷 브레이커
    시스템 다운시 간접영향부분 절단 테스트
-4. 
+4. 히스트릭스
