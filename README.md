@@ -17,11 +17,8 @@ MSA는 만능이 아님 서비스 환경적으로  서비스 사용자가 많았
 
 
 ### 마이크로 서비스  
- - 1. 유레카 (집중관리 서비스)  
- 
   - 유레카 관제 모니터링 페이지
 ![Inkedscreencapture-localhost-8761-2020-11-17-14_16_19_LI_Moment](https://user-images.githubusercontent.com/12209348/99351507-0ebf3a80-28e4-11eb-9392-56d7463a9290.jpg)
-
 
  - 유레카 서버에 클라이언트 연결 구성
 ![screencapture-localhost-8761-2019-09-20-09_44_19](https://user-images.githubusercontent.com/12209348/65290702-41a85a00-db8b-11e9-9288-96ff23bc9421.png)  
@@ -34,6 +31,12 @@ MSA는 만능이 아님 서비스 환경적으로  서비스 사용자가 많았
  - h2 DB 구성완료  
  - 프로젝트 DB 연동완료(postgresql, h2)  
  - 클라이언트(h2), 서버(postgresql)로 구성완료  
+  
+## 완료내역   
+  1. 유레카관리서버1대 클라이언트2개 구성완료  
+  2. 유레카 관리서버 페이지 각 클라이언트1,2 연동 확인완료  
+  3. 클라이언트1번 서버는 postgresql, 2번서버는 h2연결완료  
+  
   
 ### 진행예정
 1. 유레카 구성 2개 서버
