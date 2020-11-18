@@ -38,6 +38,26 @@ MSA는 만능이 아님 서비스 환경적으로  서비스 사용자가 많았
   3. 클라이언트1번 서버는 postgresql, 2번서버는 h2연결완료  
   
   
+## 리본 구성
+Ribbon은 분산 처리 방법으로 여러 서버를 라운드 로빈 방식으로 부하 분산 기능을 제공합니다. (여러 알고리즘 사용 가능)
+ 트래픽분산처리 찍어보기
+
+```
+properties 정보에  인스턴스아이디 랜덤부여 설정
+
+eureka.client.serviceUrl.defaultZone=http://localhost:8761/eureka
+eureka.instance.instanceId=${spring.application.name}:${spring.application.instance_id:${random.value}}
+```
+
+위의 설정 후 클라이언트 실행 시 스테이터스의 정보란에 인스턴스 2개가 나옴
+
+그레이들에
+spring-cloud-starter-ribbon
+추가한다.
+그다음
+@LoadBalancerClient 추가
+
+
 ### 진행예정
 1. 유레카 구성 2개 서버
   - 서버아이피 및 스테이터스 
