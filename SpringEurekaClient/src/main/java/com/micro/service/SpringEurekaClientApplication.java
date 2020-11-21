@@ -34,6 +34,6 @@ public class SpringEurekaClientApplication {
 	 	
 	@RequestMapping(value="/")
 	public String hoem() {
-		return "Eureka Client Application Test2";
+		return "/login";
 	}
 }
