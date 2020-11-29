@@ -27,6 +27,8 @@ dependencies {
    //Apache Tiles
 	compile("org.apache.tiles:tiles-jsp:3.0.8")
 	compile("javax.servlet:jstl:1.2")
+	//log4j
+	implementation 'org.bgee.log4jdbc-log4j2:log4jdbc-log4j2-jdbc4.1:1.16'
    
 }
 
