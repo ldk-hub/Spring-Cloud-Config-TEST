@@ -68,3 +68,6 @@ spring-cloud-starter-ribbon
 3. 서킷 브레이커
    시스템 다운시 간접영향부분 절단 테스트
 4. 히스트릭스
+
+참고 블로그
+https://ratseno.tistory.com/62?category=773803
